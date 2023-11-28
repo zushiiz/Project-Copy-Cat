@@ -24,17 +24,12 @@ main{
 }
 
 #right-column{
-  background-color: #201c24;
-}
-
-
-p{
-  border: 3px solid;
+  background-color: white;
 }
 
 header{
   position: fixed;
-  background: darkgray;
+  background:#404444;
   top: 0;
   left: 0;
   right: 0;
@@ -58,5 +53,48 @@ header li{
   display: inline-block;
   margin: 0;
   padding: 0;
-  font-size: 13px;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+}
+
+header span{
+  color: #a0cbff;
+}
+
+#top-nav{
+  display: grid;
+  grid-template-columns:auto auto;
+}
+
+#top-nav li{
+  display: inline-block;
+  border: solid black;
+}
+
+#top-nav ul{
+  padding:0;
+  margin: 0;
+  border: solid black;
+}
+
+#right-navigation{
+  display:flex;
+  justify-content: flex-end;
+}
+
+#left-navigation{
+  display:flex;
+  justify-content: flex-start;
+}
+
+#note{
+  display: flex;
+  flex-direction: row;
+  margin-left: 1em;
+  margin-right: 1em;
+  border: solid black;
+}
+
+#note p{
+  text-align: center;
 }
