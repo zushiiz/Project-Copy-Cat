@@ -26,8 +26,11 @@
     margin-right: auto;
     width: 100%;
   }
-  }
 
+}
+
+body{
+  margin: 0;
 }
 
 
@@ -42,7 +45,7 @@ a{
 
 main{
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 10% 90%;
   color: var(--text-color);
   margin-top: 10vh;
 }
@@ -52,14 +55,19 @@ main{
   text-align: auto;
 }
 
-
-#right-column{
-  background-color:var(--background-color);
-  box-shadow: var(--shadow);
+#big-right-text-container{
+  background-color: var(--background-color);
+  box-shadow: var(--shadow); 
+  padding-top: 2vh;
 }
 
 #welcome-img{
   display: block;
+}
+
+#HK-wiki_logo{
+  margin-left: auto;
+  margin-right: auto;
 }
 
 header{
@@ -103,11 +111,14 @@ header span{
 
 #top-nav li{
   display: inline-block;
+  background-color: var(--background-color);
+  padding: 1em;
 }
 
 #top-nav ul{
   padding:0;
   margin: 0;
+  background-color: #ffff;
 }
 
 #right-navigation{
@@ -122,7 +133,7 @@ header span{
 
 #note-block{
   background-color: var(--note-block-color);
-  margin: 12px;
+  margin: 0 12px 12px 12px;
   padding: 16px 32px;
 }
 
