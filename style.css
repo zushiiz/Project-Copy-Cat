@@ -24,15 +24,18 @@
   #welcome-img{
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: auto;
   }
 
+}
+
+img{
+  max-width: 100%;
 }
 
 body{
   margin: 0;
 }
-
 
 ul{
 
@@ -45,7 +48,7 @@ a{
 
 main{
   display: grid;
-  grid-template-columns: 10% 90%;
+  grid-template-columns: 11% 89%;
   color: var(--text-color);
   margin-top: 10vh;
 }
@@ -65,9 +68,34 @@ main{
   display: block;
 }
 
-#HK-wiki_logo{
+#left-column img{
+  display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+#left-column h3{
+  margin-bottom: 0;
+  margin-left: 1em;
+  margin-right: 0.5em;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  gap:0;
+  background-image: url(assets/img/The_Hollow_Knight_Wiki/Expandarrow.png);
+  background-repeat: no-repeat;
+  background-size: 1.5em 1em;
+  background-position: right;
+  max-width: 10em;
+
+}
+
+#left-column{
+  background-color: black;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 header{
@@ -77,6 +105,7 @@ header{
   left: 0;
   right: 0;
   line-height: 1.16666667;
+  width: auto;
 }
 
 #account-login{
@@ -154,4 +183,9 @@ hr{
 
 h1{
   margin: 0;
+}
+
+.divider{
+  width: auto;
+
 }
