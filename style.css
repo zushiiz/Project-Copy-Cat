@@ -13,19 +13,49 @@
 
 @media only screen and (max-width: 431px){
 
+  main{
+    display: grid;
+    grid-template-columns: 25% 75%;
+  }
+
+  img{
+    width: auto;
+  }
+
+  header{
+    width: auto;
+  }
+
   #mender-fly{
     display: none;
   }
 
   .note{
-    font-size: 4em;
+    font-size: 1em;
   }
 
   #welcome-img{
     margin-left: auto;
     margin-right: auto;
-    width: auto;
   }
+
+}
+
+@media only screen and (min-width: 431px){
+
+  main{
+    display: grid;
+    grid-template-columns: 11% 89%;
+  }
+
+  #left-navigation li{
+    padding: 1em;
+  }
+  
+  #right-navigation li{
+    padding: 1em;
+  }
+  
 
 }
 
@@ -47,8 +77,6 @@ a{
 }
 
 main{
-  display: grid;
-  grid-template-columns: 11% 89%;
   color: var(--text-color);
   margin-top: 10vh;
 }
@@ -80,8 +108,7 @@ main{
   margin-right: 0.5em;
   display: grid;
   grid-template-columns: auto auto;
-  justify-content: center;
-  gap:0;
+  
   background-image: url(assets/img/The_Hollow_Knight_Wiki/Expandarrow.png);
   background-repeat: no-repeat;
   background-size: 1.5em 1em;
@@ -141,7 +168,6 @@ header span{
 #top-nav li{
   display: inline-block;
   background-color: var(--background-color);
-  padding: 1em;
 }
 
 #top-nav ul{
