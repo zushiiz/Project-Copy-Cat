@@ -8,11 +8,19 @@
 
   --text-color:#ffff;
 
-  --shadow:0 3px 30px rgb(255 255 255);
+  --shadow:0 3px 30px rgb(255, 255, 255);
 
-  --nav-shadow:0 3px 30px rgb(0,0,0);
+  --nav-shadow:0 3px 30px rgb(1, 1, 1);
+
+  --top-nav-hover:#404444;
 
   --header-color:#404444;
+
+  --side-panel-color: rgba(1, 1, 1, 0.8);
+}
+
+*{
+  list-style-type:none;
 }
 
 @media only screen and (max-width: 431px){
@@ -23,7 +31,7 @@
     margin-top: 0;
     color: var(--text-color);
     padding: 0;
-    margin-bottom: 10000px;
+    margin-bottom: 4vh;
   }
 
   #right-column{
@@ -63,10 +71,6 @@
     width: auto;
   }
 
-  header{
-    width: auto;
-  }
-
   #mender-fly{
     display: none;
   }
@@ -84,13 +88,20 @@
    display: none;
  }
 
+ header button{
+  border: none;
+  background-image: url(assets/img/The_Hollow_Knight_Wiki/Expandarrow.png);
+  background-repeat: no-repeat;
+
+ }
+
 }
 
 @media only screen and (min-width: 431px){
 
   main{
     display: grid;
-    grid-template-columns: 11% 89%;
+    grid-template-columns:auto auto;
   }
 
   header button{
@@ -124,10 +135,6 @@
     max-width: 10em;
   }
 
-  #side-panel{
-    box-shadow: var(--nav-shadow);
-  }
-
   #left-column img{
     display: block;
     margin-left: auto;
@@ -135,11 +142,18 @@
   }
 
   #left-column{
-    background-color: black;
+    background-color: var(--side-panel-color);
     margin-left: 5%;
     margin-right: 5%;
     padding-left: 3%;
     padding-right: 3%;
+    box-shadow: var(--nav-shadow);  
+    width: 150px;
+    max-width: 150px;
+  }
+  
+  #right-column{
+    margin-left: 2%;
   }
 
   header{
@@ -162,7 +176,8 @@
     justify-content: flex-end;
     gap: 1em;
     margin: 0;
-    padding: 0;
+    padding: 1px;
+
   }
 
   #big-right-text-container{
@@ -190,8 +205,16 @@
 }
 
 #top-nav li{
-  display: inline-block;
+  display: block;
   background-color: var(--background-color);
+  float: left;
+  border:white;
+  border-style: none solid none solid;
+  border-width: 1px;
+}
+
+#top-nav li:hover{
+  background-color: var(--top-nav-hover);
 }
 
 #top-nav{
@@ -202,7 +225,8 @@
 #top-nav ul{
   padding:0;
   margin: 0;
-  background-color: #ffff;
+  background-color: white;
+
 }  
 
 header span{
@@ -216,11 +240,6 @@ img{
 
 body{
   margin: 0;
-}
-
-ul{
-
-  list-style-type:none;
 }
 
 a{
@@ -268,4 +287,9 @@ h1{
 
 .divider{
   width: auto;
+}
+
+#search-bar{
+  height:1.11em;
+
 }
