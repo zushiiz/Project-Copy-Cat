@@ -34,7 +34,7 @@
     margin-bottom: 4vh;
   }
 
-  #right-column{
+  .right-column{
     margin:0.5em;
   }
 
@@ -55,15 +55,15 @@
     margin: auto;
   }
 
-  #left-column img{
+  .left-column img{
    display:none;
  }
 
- #big-right-text-container{
+ .big-right-text-container{
    padding: 1em;
  }
 
- #left-column{
+ .left-column{
   display: none;
  }
 
@@ -84,16 +84,14 @@
     margin-right: auto;
   }
 
- #search-bar{
+ .search-bar{
    display: none;
  }
 
- header button{
-  border: none;
-  background-image: url(assets/img/The_Hollow_Knight_Wiki/Expandarrow.png);
-  background-repeat: no-repeat;
-
- }
+  #expand-arrow{
+    width: 1rem;
+    height: 1rem;
+  }
 
 }
 
@@ -104,15 +102,15 @@
     grid-template-columns:auto auto;
   }
 
-  header button{
+  #expand-arrow{
     display: none;
   }
 
-  #left-navigation li{
+  .left-navigation li{
     padding: 1em;
   }
   
-  #right-navigation li{
+  .right-navigation li{
     padding: 1em;
   }
 
@@ -121,7 +119,7 @@
     margin-top: 10vh;
   }
     
-  #left-column h3{
+  .left-column h3{
     margin-bottom: 0;
     margin-left: 1em;
     margin-right: 0.5em;
@@ -135,25 +133,34 @@
     max-width: 10em;
   }
 
-  #left-column img{
+  .left-column img{
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
-  #left-column{
+  .left-column{
     background-color: var(--side-panel-color);
     margin-left: 5%;
     margin-right: 5%;
     padding-left: 3%;
     padding-right: 3%;
     box-shadow: var(--nav-shadow);  
-    width: 150px;
-    max-width: 150px;
+    width: 10vw;
   }
   
-  #right-column{
+  .right-column{
     margin-left: 2%;
+  }
+
+  .navigation{
+    margin: 0;
+    padding:0;
+  }
+
+  .nav-list-content{
+    padding-left: 2em;
+    margin: 0;
   }
 
   header{
@@ -166,7 +173,7 @@
     width: auto;
   }
 
-  #account-login{
+  .account-login{
   margin-right: 1em;
   }
 
@@ -180,7 +187,7 @@
 
   }
 
-  #big-right-text-container{
+  .big-right-text-container{
     padding: 1em;
   }
   
@@ -194,17 +201,17 @@
 
 }
 
-#right-navigation{
+.right-navigation{
   display:flex;
   justify-content: flex-end;
 }
 
-#left-navigation{
+.left-navigation{
   display:flex;
   justify-content: flex-start;
 }
 
-#top-nav li{
+.top-nav li{
   display: block;
   background-color: var(--background-color);
   float: left;
@@ -213,16 +220,16 @@
   border-width: 1px;
 }
 
-#top-nav li:hover{
+.top-nav li:hover{
   background-color: var(--top-nav-hover);
 }
 
-#top-nav{
+.top-nav{
   display: grid;
   grid-template-columns:auto auto;
 }
 
-#top-nav ul{
+.top-nav ul{
   padding:0;
   margin: 0;
   background-color: white;
@@ -246,7 +253,7 @@ a{
   text-decoration: none;
 }
 
-#big-right-text-container{
+.big-right-text-container{
   background-color: var(--background-color);
   box-shadow: var(--shadow); 
   padding-top: 2vh;
@@ -256,7 +263,7 @@ a{
   display: block;
 }
 
-#note-block{
+.note-block{
   background-color: var(--note-block-color);
   margin: 0 12px 12px 12px;
   padding: 16px 32px;
@@ -289,7 +296,6 @@ h1{
   width: auto;
 }
 
-#search-bar{
+.search-bar{
   height:1.11em;
-
 }
