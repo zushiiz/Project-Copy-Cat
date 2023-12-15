@@ -10,8 +10,6 @@
 
   --shadow:0 3px 30px rgb(255, 255, 255);
 
-  --nav-shadow:0 3px 30px rgb(1, 1, 1);
-
   --top-nav-hover:#404444;
 
   --header-color:#404444;
@@ -145,7 +143,6 @@
     margin-right: 5%;
     padding-left: 3%;
     padding-right: 3%;
-    box-shadow: var(--nav-shadow);  
     width: 10vw;
   }
   
@@ -232,7 +229,6 @@
 .top-nav ul{
   padding:0;
   margin: 0;
-  background-color: white;
 
 }  
 
@@ -265,8 +261,8 @@ a{
 
 .note-block{
   background-color: var(--note-block-color);
-  margin: 0 12px 12px 12px;
-  padding: 16px 32px;
+  margin: 0 0.8em 0.8em 0.8em;
+  padding: 1em 2em;
 }
 
 .carousel img{
